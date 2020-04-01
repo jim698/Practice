@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+	
+	<context:annotation-config> <!-- 프로젝트 안의 자바파일의 어노테이션을 해석하라는 의미~ 겁나 쓰인다.! 알고 있자! 역시나 하단의 Namespaces의 context를 체크해서 쓰자-->
+		<bean class="com.tj.ex3xml_java.ApplicationConfig"/>
+	</context:annotation-config>
+	
+	<bean id="student2" class="com.tj.ex1xml.Student">
+	
+		<constructor-arg value="임재혁" />
+		<constructor-arg value="31" />
+		<constructor-arg>
+			<list>
+				<value>낚시</value>
+				<value>풋살</value>
+			</list>
+		</constructor-arg>
+		<property name="height" value="187" />
+		<property name="weight" value="100" />
+
+	</bean>
+
+
+</beans>

@@ -1,0 +1,12 @@
+package com.tj.ex1xml;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class TestMain {
+	public static void main(String[] args) {
+		String resourceLocation = "classpath:ex1/applicationCTX1.xml"; // classpath: 는 생략가능
+		String resourceLocation2 = "ex1/applicationCTX2.xml";
+		AbstractApplicationContext ctx = new GenericXmlApplicationContext(resourceLocation, resourceLocation2);
+	}
+}

@@ -1,0 +1,12 @@
+package com.tj.test1.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+
+@Controller
+public class MyController {
+	@ModelAttribute("msg")
+	public String msg() {
+		return "현재 총 4명";
+	}
+}

@@ -1,0 +1,28 @@
+package com.tj.ex1;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+
+public class ProxyClass {
+
+	public Object aroundAdvice(ProceedingJoinPoint joinPoint) throws Throwable { // joinPoint : 핵심기능
+		// aroundAdvice : 핵심기능 전후로 공통기능 수행
+		System.out.println("★★★★★★★★★★★★★");
+		String signatureName = joinPoint.getSignature().toShortString(); // 핵심기능 메소드 명
+		System.out.println(signatureName + "가 시작되었습니다.");
+		long startTime = System.currentTimeMillis(); // 시작시점
+
+		try {
+			Object obj = joinPoint.proceed(); // 실제 핵심기능 실행
+			return obj;
+
+		} finally {
+			long endTime = System.currentTimeMillis(); // 핵심기능 수행 후 시점
+			System.out.println(signatureName + "가 수행끝났습니다. 경과시간 : " + (endTime - startTime));
+		}
+	}
+
+	public void beforeAdvice() {
+		System.out.println("이 공통기능 수행하고 알아서 핵심기능 수행하고 끝");
+	}
+
+}

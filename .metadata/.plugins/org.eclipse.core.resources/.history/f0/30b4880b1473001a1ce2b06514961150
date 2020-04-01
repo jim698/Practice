@@ -1,0 +1,12 @@
+package com.tj.ch13.service;
+
+import org.springframework.ui.Model;
+
+public class BListService implements BService {
+
+	@Override
+	public void execute(Model model) {
+		
+	}
+
+}

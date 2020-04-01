@@ -1,0 +1,16 @@
+package com.tj.ch15.service;
+
+import org.springframework.stereotype.Service;
+import org.springframework.ui.Model;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
+
+@Service
+public class FileUploadService {
+	public boolean FileUp(MultipartHttpServletRequest mRequest, Model model) {
+		boolean isUpload = false;
+		String uploadPath = mRequest.getRealPath("upload/");
+		String backupPath = "D:\\mega_it\\source\\9_Spring\\ch15_fileup\\src\\main\\webapp\\upload\\";
+		
+		return isUpload;
+	}
+}

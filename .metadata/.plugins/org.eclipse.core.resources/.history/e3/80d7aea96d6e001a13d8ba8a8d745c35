@@ -1,0 +1,24 @@
+package com.tj.ex2java;
+
+import java.util.ArrayList;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.tj.ex1xml.Student;
+
+@Configuration // 이 놈은 자바파일이 아니라, 설정파일임을 명시하는 어노테이션(자바로 xml대신에 설정해보는 것)
+
+public class ApplicationConfig {
+	@Bean
+	public Student student1() {
+		ArrayList<String> hobbies = new ArrayList<String>();
+		hobbies.add("요가"); hobbies.add("낚시");
+		Student student = new Student("홍길동", 30, hobbies);
+		student.setHeight(170);
+		student.setWeight(60);
+		
+		
+	}
+	
+}

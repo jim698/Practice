@@ -1,0 +1,8 @@
+package com.tj.ex1xml;
+
+public class TestMain {
+	public static void main(String[] args) {
+		String resourceLocation = "classpath:ex1/applicationCTX1.xml";
+		String resourceLocation2 = "ex1/applicationCTX2.xml";
+	}
+}

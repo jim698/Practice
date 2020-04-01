@@ -1,0 +1,16 @@
+package com.tj.ch09.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("member")
+
+public class MemberController {
+	
+	@RequestMapping(params="method=join")
+	public String member(Model model) {
+		model.addAttribute("kind", "회원");
+	}
+}

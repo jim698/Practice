@@ -1,0 +1,11 @@
+package com.tj.ex1xml;
+
+public class StudentInfo {
+	private Student student;
+
+	public StudentInfo(Student student) {
+		this.student = student;
+	}
+	
+	
+}

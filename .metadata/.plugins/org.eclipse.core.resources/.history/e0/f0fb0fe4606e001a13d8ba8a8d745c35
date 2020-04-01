@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- <bean id="vh" class="com.tj.ex2vehicle.Bicycle"/> --> <!-- 자전거 였을 때~ -->
+	
+	<!-- <bean id="vh" class="com.tj.ex2vehicle.Car"/> -->  <!-- 자전거에서 자동차로 딸깍 -->
+	
+	<bean id="vh" class="com.tj.ex2vehicle.Airplane"/>   <!-- 자동차에서 뱅기로 딸깍 -->
+	
+	
+
+</beans>

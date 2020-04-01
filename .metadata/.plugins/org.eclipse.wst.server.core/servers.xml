@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v9.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v9.0 Server at localhost" name="Tomcat v9.0 Server at localhost" runtime-id="Apache Tomcat v9.0" saveSeparateContextFiles="true" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="false" timestamp="10">
+    <list key="modules" value0="ch08_mvc::org.eclipse.jst.jee.server:ch08_mvc::jst.web::2.5" value1="ch09_controller::org.eclipse.jst.jee.server:ch09_controller::jst.web::2.5" value2="ch10_formdata::org.eclipse.jst.jee.server:ch10_formdata::jst.web::2.5" value3="ch11_requestmapping::org.eclipse.jst.jee.server:ch11_requestmapping::jst.web::2.5" value4="today_test::org.eclipse.jst.jee.server:today_test::jst.web::2.5" value5="ch12_validator::org.eclipse.jst.jee.server:ch12_validator::jst.web::2.5" value6="ch13_mvcboard::org.eclipse.jst.jee.server:ch13_mvcboard::jst.web::2.5" value7="ch14_jdbc::org.eclipse.jst.jee.server:ch14_jdbc::jst.web::2.5" value8="ch15_fileup::org.eclipse.jst.jee.server:ch15_fileup::jst.web::2.5"/>
+  </server>
+</servers>

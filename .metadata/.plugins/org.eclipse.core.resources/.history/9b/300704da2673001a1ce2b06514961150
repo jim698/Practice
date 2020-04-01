@@ -1,0 +1,15 @@
+package com.tj.ch13.service;
+
+import java.util.Map;
+
+import org.springframework.ui.Model;
+
+public class BWriteService implements BService {
+
+	@Override
+	public void execute(Model model) {
+		Map<String, Object> map = model.asMap(); // model안의 attribute값을 추출하기 위해 map화, 자바에서는 el language를 쓸 수 없기에~
+		
+	}
+
+}

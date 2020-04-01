@@ -1,0 +1,16 @@
+package com.tj.ch09.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class BoardController {
+	
+	@RequestMapping("board/view") // spring에서는 /를 해도 되고 안해도 되공~ /board/view 
+	public String view() {
+		
+		return "board/view";
+		
+		// 뷰단 : /WEB_INF/views/board/view.jsp를 의미한다.
+	}
+}

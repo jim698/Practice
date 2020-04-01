@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="student1" class="com.tj.ex1student.Student"> <!-- 매개변수가 없는 생성자가 없는, bean이라 cons 설정을 꼭 해줘야 한당! -->
+	
+		<constructor-arg>					<!-- Student class의 매개변수 4개의 순서도 지켜야 한다잉! -->
+			<value>홍길동</value>
+		</constructor-arg>
+
+		<constructor-arg>
+			<value>29</value>
+		</constructor-arg>
+
+		<constructor-arg>
+			<value>고1</value>
+		</constructor-arg>
+
+		<constructor-arg>
+			<value>앵무1</value>
+		</constructor-arg>
+
+	</bean>	
+	
+	<bean id="student2" class="com.tj.ex1student.Student">
+	
+		<constructor-arg value="성춘향"/>
+		<constructor-arg value="20"/>
+		<constructor-arg value="고2"/>
+		<constructor-arg value="앵무3"/>
+		
+	</bean>
+	
+	
+	<bean id="studentInfo" class="com.tj.ex1student.StudentInfo">
+		<constructor-arg>
+			<ref bean ="student1"/>
+		</constructor-arg>
+	</bean>
+	
+	
+	
+</beans>

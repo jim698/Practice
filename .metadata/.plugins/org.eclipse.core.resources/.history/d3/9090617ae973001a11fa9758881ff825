@@ -1,0 +1,12 @@
+package com.tj.ch15.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class FileController {
+	@RequestMapping(value="fileInput", method = RequestMethod.GET)
+	public String fileInput() {
+		return "";
+	}
+}

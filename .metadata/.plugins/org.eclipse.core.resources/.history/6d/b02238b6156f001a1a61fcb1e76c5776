@@ -1,0 +1,6 @@
+package com.tj.ex2;
+
+public class AdminInfo {
+	private String adminId;
+	private String adminPw;
+}

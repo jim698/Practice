@@ -1,0 +1,9 @@
+package com.tj.ex1;
+
+import org.springframework.core.env.Environment;
+
+public class AdminInfo {
+	private String adminId;
+	private String adminPw;
+	private Environment env;
+}

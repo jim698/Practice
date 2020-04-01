@@ -1,0 +1,4 @@
+dev.ipNum=127.0.0.1
+dev.portNum=8181
+dev.userId=test
+dev.userPw=1234

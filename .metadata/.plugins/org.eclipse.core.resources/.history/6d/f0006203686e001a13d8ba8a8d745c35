@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="family" class="com.tj.ex1xml.Family" c:papaName="홍길동" c:mamaName="성춘향" p:sisterName="홍진영"> <!-- 하단의 Namespaces에서 c랑 p를 추가해서 이름 추가 -->
+		<property name="brotherName" value="홍금보"/>
+	
+	</bean>
+	<bean id="student2" class="com.tj.ex1xml.Student" c:name="이몽룡" c:age="300">
+		<constructor-arg>
+			<list>
+				<value>등산</value>
+				<value>앵무새랑 놀기</value>
+			</list>
+		</constructor-arg>
+	
+	</bean>
+	
+</beans>

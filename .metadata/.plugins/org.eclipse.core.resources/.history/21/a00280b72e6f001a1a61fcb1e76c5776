@@ -1,0 +1,16 @@
+package com.tj.homework;
+
+import java.util.Scanner;
+
+public class TestMain {
+	public static void main(String[] args) {
+		String config = null;
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("dev? run?");
+
+		config = scanner.next();
+		if (!config.equals("dev")) {
+			config = "run";
+		}
+	}
+}

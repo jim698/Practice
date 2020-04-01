@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="student" class="com.tj.ex1.Student">
+		<property name="name" value="홍길동"/>
+		<property name="age" value="30"/>
+		<property name="gradeNum" value="3"/>
+		<property name="classNum" value="1"/>
+	</bean>
+	
+	<bean id="worker" class="com.tj.ex1.Worker">
+		<property name="name" value="홍성실"/>
+		<property name="age" value="30"/>
+		<property name="job" value="낚시꾼"/>
+	</bean>
+
+</beans>

@@ -1,0 +1,9 @@
+package com.tj.ex2;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class TestMain {
+	public static void main(String[] args) {
+		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
+	}
+}

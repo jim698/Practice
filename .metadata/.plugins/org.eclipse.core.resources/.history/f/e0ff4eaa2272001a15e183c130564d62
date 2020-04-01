@@ -1,0 +1,5 @@
+package com.tj.ch10.dto;
+
+public class MemberDto {
+
+}

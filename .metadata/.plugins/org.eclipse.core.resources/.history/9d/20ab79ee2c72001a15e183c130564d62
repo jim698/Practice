@@ -1,0 +1,21 @@
+package com.tj.ch10.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class MyController {
+	@RequestMapping("/")
+	public String input() {
+		return "input";
+	}
+	
+	@RequestMapping("studentId/*")
+	public String studentId() {
+		// * : 0자 이상의 글자      ex) 그냥 studentId만 존재해도 가능
+		// ** : 0개 이상의 디렉토리 경로  studentId/aaa/man
+		// ? : 1개 이상의 글자		ex)studentId/존재해야함~
+		
+		return "";
+	}
+}

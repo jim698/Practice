@@ -1,0 +1,22 @@
+package com.tj.ch10.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class MController {
+	@RequestMapping("member/join1")
+	public String join1(HttpServletRequest request, Model model) {
+		String name = request.getParameter("name");
+		String id = request.getParameter("id");
+		String pw = request.getParameter("pw");
+		int age = Integer.parseInt(request.getParameter("age"));
+		String email = request.getParameter("email");
+		String address = request.getParameter("address");
+
+		return "";
+	}
+}

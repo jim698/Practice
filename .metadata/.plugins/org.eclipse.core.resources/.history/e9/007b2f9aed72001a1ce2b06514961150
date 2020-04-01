@@ -1,0 +1,20 @@
+package com.tj.ch12.dto;
+
+import org.springframework.validation.Errors;
+import org.springframework.validation.Validator;
+
+public class StudentValidator implements Validator {
+
+	@Override
+	public boolean supports(Class<?> clazz) {
+		
+		return Student.class.isAssignableFrom(clazz); // 검증할 객체를 명시
+	}
+
+	@Override	// validator.validate(student, errors); // 검증해라!! - HomeController.java에 적어둠! 여기에 구체적인 메소드 작성할 것!
+	public void validate(Object target, Errors errors) { // 검증하는 메소드
+		String name = ((Student)target).getName();
+		int id = ((Student)target).getId();
+	}
+
+}

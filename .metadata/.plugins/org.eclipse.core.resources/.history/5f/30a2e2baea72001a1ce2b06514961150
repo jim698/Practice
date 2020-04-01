@@ -1,0 +1,5 @@
+package com.tj.ch12.dto;
+
+public class Student {
+
+}

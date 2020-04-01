@@ -1,0 +1,14 @@
+package com.tj.ch13.dao;
+
+public class BoardDao {
+	public static final int SUCCESS = 1;
+	public static final int FAIL = 0;
+	
+	private static BoardDao instance = new BoardDao();
+	public static BoardDao getInstance() {
+		return instance;
+	}
+	private BoardDao() {}
+	
+	
+}

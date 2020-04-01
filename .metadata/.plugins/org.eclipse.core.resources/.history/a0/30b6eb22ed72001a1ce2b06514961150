@@ -1,0 +1,19 @@
+package com.tj.ch12.dto;
+
+import org.springframework.validation.Errors;
+import org.springframework.validation.Validator;
+
+public class StudentValidator implements Validator {
+
+	@Override
+	public boolean supports(Class<?> clazz) {
+		
+		return Student.class.isAssignableFrom(clazz); // 검증할 객체를 명시
+	}
+
+	@Override
+	public void validate(Object target, Errors errors) { // 검증하는 메소드
+		
+	}
+
+}

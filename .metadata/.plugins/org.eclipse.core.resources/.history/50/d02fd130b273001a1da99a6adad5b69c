@@ -1,0 +1,64 @@
+package com.tj.ch13.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.tj.ch13.dto.BoardDto;
+import com.tj.ch13.service.BListService;
+import com.tj.ch13.service.BService;
+import com.tj.ch13.service.BWriteService;
+
+
+@Controller
+public class BController { // list.do?pageNum=2
+	
+	private BService service;
+	private int writetable = 0; // write_view를 꼭 갔다가 와야 write가 되게 하기 위해서
+	
+	@RequestMapping(value="list", method = RequestMethod.GET)
+	public String list(String pageNum, Model model) {
+		model.addAttribute("pageNum", pageNum);
+		service = new BListService();
+		service.execute(model);
+		
+		return "mvcboard/list";
+	}
+	
+	@RequestMapping(value="list", method = RequestMethod.POST)
+	public String list_post(String pageNum, Model model) {
+		model.addAttribute("pageNum", pageNum);
+		service = new BListService();
+		service.execute(model);
+		
+		return "mvcboard/list";
+	}
+	
+	@RequestMapping(value="write_view", method = RequestMethod.GET)
+	public String write_view() {
+		
+		writetable = 1; // 
+		return "mvcboard/write_view";
+	}
+	
+	@RequestMapping(value="write", method = RequestMethod.POST)
+	public String write(BoardDto boardDto, HttpServletRequest request, Model model) {
+		if(writetable == 1) {
+			model.addAttribute("request", request); // 서비스 단에서 ip 추출하기 위해서(request.getRemoteAddr()을 하기 위해서)
+			service = new BWriteService();
+			service.execute(model);
+			writetable = 0;
+		}
+		
+		return "forward:list.do";
+	}
+	
+}
+
+
+
+
+

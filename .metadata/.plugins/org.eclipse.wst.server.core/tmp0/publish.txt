@@ -1,0 +1,11 @@
+#Tomcat publish data
+#Wed Apr 01 17:31:25 KST 2020
+org.eclipse.jst.jee.server\:ch10_formdata=D\:\\mega_it\\IDE\\apache-tomcat-9.0_sts\\wtpwebapps\\ch10_formdata
+org.eclipse.jst.jee.server\:ch09_controller=D\:\\mega_it\\IDE\\apache-tomcat-9.0_sts\\wtpwebapps\\ch09_controller
+org.eclipse.jst.jee.server\:today_test=D\:\\mega_it\\IDE\\apache-tomcat-9.0_sts\\wtpwebapps\\today_test
+org.eclipse.jst.jee.server\:ch08_mvc=D\:\\mega_it\\IDE\\apache-tomcat-9.0_sts\\wtpwebapps\\ch08_mvc
+org.eclipse.jst.jee.server\:ch12_validator=D\:\\mega_it\\IDE\\apache-tomcat-9.0_sts\\wtpwebapps\\ch12_validator
+org.eclipse.jst.jee.server\:ch15_fileup=D\:\\mega_it\\IDE\\apache-tomcat-9.0_sts\\wtpwebapps\\ch15_fileup
+org.eclipse.jst.jee.server\:ch11_requestmapping=D\:\\mega_it\\IDE\\apache-tomcat-9.0_sts\\wtpwebapps\\ch11_requestmapping
+org.eclipse.jst.jee.server\:ch14_jdbc=D\:\\mega_it\\IDE\\apache-tomcat-9.0_sts\\wtpwebapps\\ch14_jdbc
+org.eclipse.jst.jee.server\:ch13_mvcboard=D\:\\mega_it\\IDE\\apache-tomcat-9.0_sts\\wtpwebapps\\ch13_mvcboard

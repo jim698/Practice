@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
+<c:set var="conPath" value="${pageContext.request.contextPath }"/>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>${greeting }</h1>
+	<hr>
+	<h2><a href="${conPath }/board/view">board의 view로 가기</a></h2>
+	<h2><a href="${conPath }/board/content">board의 content로 가기</a></h2>
+	<h2><a href="${conPath }/board/write">board의 write가기</a></h2>
+	<h2><a href="${conPath }/board/reply">board의 reply로 가기</a></h2>
+</body>
+</html>

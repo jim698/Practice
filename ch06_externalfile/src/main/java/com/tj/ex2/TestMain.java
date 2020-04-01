@@ -1,0 +1,21 @@
+package com.tj.ex2;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class TestMain {
+	public static void main(String[] args) {
+
+		String loc = "classpath:applicationCTX2.xml";
+		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext(loc);
+
+		AdminInfo adminInfo = ctx.getBean("adminInfo", AdminInfo.class);
+
+		System.out.println("adminid : " + adminInfo.getAdminId());
+		System.out.println("adminpw : " + adminInfo.getAdminPw());
+		System.out.println("sub_adminid : " + adminInfo.getSub_adminId());
+		System.out.println("sub_adminpw : " + adminInfo.getSub_adminPw());
+
+		ctx.close();
+
+	}
+}

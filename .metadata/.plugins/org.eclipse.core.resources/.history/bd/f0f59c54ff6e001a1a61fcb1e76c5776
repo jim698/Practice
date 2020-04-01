@@ -1,0 +1,5 @@
+package com.tj.ex5autowired;
+
+public class StudentInfo {
+
+}

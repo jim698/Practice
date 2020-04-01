@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="bmiCalculator" class="com.tj.bmi.BMIcalculator"> <!-- bean id 대신에 name이라 작성해도 됩니다. -->
+	
+		<property name="lowWeight">
+			<value>18.5</value>						<!-- 아래 양식이, 더 깔끔한듯 싶으니 써야지롱 -->
+		</property>
+		
+		<property name="normal" value="23"/>
+		<property name="overWeight" value="25"/>
+		<property name="obesity" value="30"/>
+		
+	</bean>
+	
+	
+	<bean id="myInfo" class="com.tj.bmi.MyInfo">
+	
+		<property name="name" value="홍길동"/> 
+		<property name="height" value="170"/>
+		<property name="weight" value="60"/> 	<!-- 요까지 기본데이터 형 -->
+		
+		<property name="hobbies">			<!-- 리스트 데이터 형 -->
+			<list>
+				<value>요가</value>
+				<value>마라톤</value>
+				<value>낚시</value>
+			</list>
+		</property>
+		
+		<property name="bmicalculator"> <!-- 다른 빈 객체 참조형 = 객체타입 -->
+			<ref bean="bmiCalculator"></ref>
+		</property>
+	</bean>
+
+</beans>

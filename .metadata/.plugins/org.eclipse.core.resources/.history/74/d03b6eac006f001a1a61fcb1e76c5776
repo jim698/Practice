@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="student1" class="com.tj.ex5autowired.Student">
+		<constructor-arg value="홍길동"/>
+		<constructor-arg value="300"/>	
+	</bean>
+	
+	<bean id="studentInfo" class="com.tj.ex5autowired.StudentInfo">
+	
+		<!-- <property name=""></property> 이거 작성 안해도 됩니다. @autowired를 작성해놨자나~~ -->
+		
+	</bean>
+
+</beans>

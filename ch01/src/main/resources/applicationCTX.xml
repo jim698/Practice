@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="calculation" class="com.tj.ch01.Calculation"> 		<!-- 매개변수 생성자가 없으면 에러가 난다. 지금은 있다. -->
+		<property name="num1">							 <!-- setter가 없으면, 에러가 나는 부분. 난 해줬지롱~ -->
+			<value>10</value>
+		</property>
+		<property name="num2">
+			<value>5</value>
+		</property>
+	</bean>
+	
+</beans>

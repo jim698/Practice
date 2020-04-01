@@ -1,0 +1,11 @@
+package com.tj.ex2vehicle;
+
+public class Airplane implements Vehicle {
+
+	@Override
+	public void ride(String name) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.tj.test1.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class MyController {
+	@ModelAttribute("msg")
+	public String msg() {
+		return "현재 총 4명";
+	}
+	
+	@RequestMapping("inputForm")
+	public String inputForm() {
+		return "inputForm";
+	}
+}

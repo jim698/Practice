@@ -1,0 +1,17 @@
+package com.tj.ex1;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+import org.springframework.core.env.ConfigurableEnvironment;
+import org.springframework.core.env.MutablePropertySources;
+import org.springframework.core.io.support.ResourcePropertySource;
+
+public class TestMain {
+	public static void main(String[] args) {
+		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext(); // 컨테이너 생성(환경 설정)
+		ConfigurableEnvironment env = ctx.getEnvironment();
+		MutablePropertySources propertySources = env.getPropertySources();
+		propertySources.addLast(new ResourcePropertySource("classpath:admin.properties"));
+		
+		
+	}
+}

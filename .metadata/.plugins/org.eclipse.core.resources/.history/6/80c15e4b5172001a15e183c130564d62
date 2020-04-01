@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+
+h1{
+	color:red;
+	text-align:right;
+}
+
+h2{
+	text-align: center;
+}
+
+.number{
+	width:169px;
+}
